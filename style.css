@@ -1,0 +1,306 @@
+@font-face {
+    font-family: "Din Condensed";
+    src: url(/fonts/DIN-Condensed.woff) format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Din Regular";
+    src: url(/fonts/DIN-Regular.woff) format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Din Medium;
+    src: url(/fonts/DIN-Medium.woff) format("woff");
+    font-weight: 400
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Din Condensed";
+}
+
+html {
+    font-size: 62.5%;
+    color: rgb(43, 47, 47);
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(images/bg.webp); 
+    background-position: center;
+    background-size: cover;
+    height: 100vh; 
+    /* position: relative; */
+    color: white;
+}
+
+.log {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Din Condensed";
+    font-size: 2.5rem;
+    font-weight: 200;
+    background-color: rgba(104, 106, 106, 0.487);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1000;
+    position: fixed;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    /* position: fixed; */
+}
+
+nav {
+
+    /* position: fixed; */
+    justify-content: end;
+}
+
+nav a {
+    letter-spacing: 0.05em;
+    margin-left: 20px;
+    line-height: 100px;
+}
+
+button {
+    font-family: "Din Condensed";
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: rgb(76, 100, 255);
+    border: 1px solid rgb(76, 100, 255);
+    border-radius: 400px;
+    color: white;
+}
+
+.apply-btn {
+    padding: 8px 24px 6px;
+    margin-left: 40px;
+}
+
+.down-btn {
+    padding: 8px 24px 6px;
+    margin: 40px;
+    position: absolute;
+    bottom: 20px; 
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 8rem;
+    color: white;
+    margin: 0;
+    width: 50%;
+}
+
+.hero h4 {
+    font-size: 3rem;
+    margin-top: 30px;
+    color: white;
+    width: 25%;
+}
+
+.information-page {
+    padding: 100px 0; 
+    background-color: #F8F9F9;
+}
+
+.image-text {
+    display: grid;
+    grid-template-columns: 5fr 1fr 6fr;
+    grid-gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 50px 20px;
+}
+
+.image-section {
+    background-image: url(images/bild.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    min-height: 500px;
+    border-radius: 20px;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-family: "Din Regular";
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.text-section h1 {
+    margin-bottom: 20px;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+.text-section p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-family: "Din Condensed";
+}
+
+.more-options {
+    display: flex;
+    flex-direction: row;
+}
+
+.apply-directly-btn,
+.read-more-btn {
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.apply-directly-btn {
+    background-color: rgb(43, 47, 47);
+    border: none;
+    margin-right: 10px;
+    border-radius: 400px;
+}
+
+.read-more-btn {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(43, 47, 47);
+    border: 1px solid rgb(43, 47, 47);
+    border-radius: 400px;
+}
+
+.recommendation-page {
+    background-color: white;
+    font-family: "Din Condensed";
+}
+
+.recommendation-page p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-family: "Din Condensed";
+}
+
+.recommendation-text-area {
+    max-width: 600px;
+    padding-left: 150px;
+}
+.recommendation-page h1 {
+    font-size: 6rem;
+    letter-spacing: 2px;
+    margin: 0;
+    max-width: 1600;
+}
+.recommendation-text-area h2 {
+    /* font-size: 2rem;
+    padding: 20px; */
+    font-size: 2.5rem;
+    line-height: 1.8;
+    font-family: "Din Condensed";
+    /* text-transform: uppercase; */
+    padding-top: 20px;
+    border-radius: 20px;
+}
+
+.trainings-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 50px 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center;
+    background-color: #F8F9F9;
+    font-size: 2.4rem;
+    line-height: 3;
+    text-transform: uppercase;
+    font-family: "Din Condensed";
+    border-radius: 8px;
+}
+
+.trainings-area button {
+    align-items: center;
+    height: 60px;
+}
+
+.call-to-action {
+    margin: 50px 20%;
+    padding: 100px; 
+    background-color: #F8F9F9;
+    max-width: 60%;
+    align-items: center;
+}
+
+.call-to-action button {
+    margin-top: 70px;
+    padding: 15px 50px;
+    font-size: 20px;
+}
+
+.contact {
+    padding: 50px 200px;
+    background-color: #F8F9F9;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+.contact h2 {
+    font-size: 4rem;
+    line-height: 50px;
+}
+
+.media-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact p {
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.follow-us p{
+    margin-top: 10px;
+    font-family: "Din Condensed";
+    letter-spacing: 1.5px;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
