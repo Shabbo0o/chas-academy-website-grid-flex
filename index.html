@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d3f4323f92.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <!-- ******************** Page 1 ******************** -->
@@ -15,13 +17,16 @@
         <div class="log">
             <img src="images/chas-academy-emblem.png" alt="logo" href="index.html" class="logo right-side" />
             <nav class="left-side">
-                <a>YH training courses</a>
-                <a>Study with us</a>
-                <a>Chase Upskill</a>
-                <a>For businesses</a>
-                <a>About us</a>
-                <a>Current</a>
-                <button class="button apply-btn">Apply</button>
+                <span class="nav">
+                    <a>YH training courses</a>
+                    <a>Study with us</a>
+                    <a>Chase Upskill</a>
+                    <a>For businesses</a>
+                    <a>About us</a>
+                    <a>Current</a>
+                    <button class="button apply-btn">Apply</button>
+                </span>
+                <i class="fa-solid fa-bars"></i>
             </nav>
         </div>
         <div class="hero">
@@ -145,7 +150,12 @@
             </div>
         </div>
     </div>
-
+    <script>
+        document.querySelector('.fa-bars').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+    </script>
+    
 </body>
 </html>
 
